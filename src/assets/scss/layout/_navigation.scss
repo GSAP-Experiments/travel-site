@@ -1,0 +1,108 @@
+.nav{
+   width: 100%;
+   position: fixed;
+   top: 4.0625em;
+   left: 0;
+   z-index: 1;
+   padding: 0 3.125em;
+
+   &__logo{
+      .logo{
+         font-weight: bold;
+         font-size: 1.25rem;
+      }
+   }
+
+   &__list{
+      // width: 500px;
+      // justify-content: space-between;
+   }
+
+   .vertical-divider{
+      width: 2px;
+      height: 100%;
+      background-color: $white;
+   }
+
+   .nav__mobile-menu{
+      position: relative;
+   }
+
+   .hamburger-wrapper{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 0.874rem;
+      justify-content: space-between;
+      cursor: pointer;
+
+      &:hover .hamburger{
+         // transform: scale(0);
+         opacity: 1;
+      }
+
+      .hamburger{
+         width: 2.2rem;
+         height: 0.5px;
+         background-color: $white;
+         display: inline-block;
+         transform-origin: 0% 50%;
+      }
+   }
+
+   .close-wrapper{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 1.3rem;
+      height: 0.5px;
+      // border: 1px solid red;
+
+      .close{
+         position: absolute;
+         top: 0px;
+         width: 1.3rem;
+         height: 0.5px;
+         background-color: $white;
+         transform-origin: 50% 50%;
+      }
+
+      .close--left{
+         transform: rotate(45deg) scale(0);
+      }
+
+      .close--right{
+         transform: rotate(-45deg) scale(0);
+      }
+   }         
+}
+
+.overlay-menu{
+   padding-bottom: 3em;
+   // padding-top: 8.125em;
+   width: 100%;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: $white;
+   transform: scaleX(0);
+   transform-origin: 0% 50%;
+
+   .overlay-menu__content{
+      height: 100%;
+   }
+
+   .overylay-menu__link{
+      color: $grey;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+   }
+
+   .overylay-menu__link--social{
+      color: $black;
+   }
+}
+   

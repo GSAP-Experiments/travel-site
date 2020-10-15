@@ -1,0 +1,36 @@
+html{
+   font-size: 16px;
+}
+
+body {
+  font-family: $raleway;
+  font-size: $fontSize;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  overflow-x: auto;
+  color: $white;
+}
+
+a{
+  color: $white;
+  text-decoration: none;
+  font-weight: 300;
+
+  &:hover,
+  &:active{
+    text-decoration: none;
+  }
+}
+
+button{
+   padding: 0;
+   border: none;
+   background-color: transparent;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
